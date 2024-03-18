@@ -7,6 +7,8 @@ using static AllData;
 
 public class Manager : MonoBehaviour
 {
+    public static Manager Instance { get; private set; }
+
     public Transform Content;
     public Entry _entry;
     public Button LoadData, Reset;
@@ -19,6 +21,10 @@ public class Manager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
     }
     private void Start()
     {
@@ -80,10 +86,10 @@ public class Manager : MonoBehaviour
                     en.gameObject.SetActive(true);
                     break;
                 case 1:
-                        en.gameObject.SetActive(en.isManager);
+                    en.gameObject.SetActive(en.isManager);
                     break;
                 case 2:
-                        en.gameObject.SetActive(!en.isManager);
+                    en.gameObject.SetActive(!en.isManager);
                     break;
             }
         }
