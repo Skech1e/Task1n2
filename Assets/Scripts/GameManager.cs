@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject circle;
     public RectTransform Layout;
-    int posCount { get => Layout.childCount; }
-    [field: SerializeField] public int spawnCount { get; private set; }
-    [field: SerializeField] public List<Transform> positions { get; private set; }
     public Button restart;
+
+    int posCount { get => Layout.childCount; }
+    public int spawnCount { get; private set; }
+    [field: SerializeField] public List<Transform> positions { get; private set; }
 
     private void Awake()
     {

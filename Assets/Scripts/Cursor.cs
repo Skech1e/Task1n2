@@ -61,6 +61,7 @@ public class Cursor : MonoBehaviour
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(touchPos);
             rb.position = cursorPos;
             tr.enabled = true;
+            tr.time = 100;
         }
 
     }
@@ -69,11 +70,12 @@ public class Cursor : MonoBehaviour
 
     private void FingerUp(Finger finger)
     {
+        tr.time = -1;
+        //tr.Clear();
+        //tr.enabled = false;
+        circleCollider.enabled = false;
         foreach (GameObject circle in circles)
             circle.SetActive(false);
-        tr.enabled = false;
-        tr.Clear();
-        circleCollider.enabled = false;
     }
 
     void Restart() => circles = new();
