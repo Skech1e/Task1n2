@@ -28,3 +28,5 @@ public class Entry : MonoBehaviour
     {
         button = GetComponent<Button>();
     }
+}
+
