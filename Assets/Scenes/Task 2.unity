@@ -2286,6 +2286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826038922}
   - component: {fileID: 826038923}
+  - component: {fileID: 826038924}
   m_Layer: 5
   m_Name: Footer
   m_TagString: Untagged
@@ -2340,6 +2341,26 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &826038924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826038921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c182af78c0704cf4ba988d84a34452b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: 0
+  axis: 1
+  easeType: 2
+  startValue: -2000
+  endValue: 0
+  duration: 0.5
+  delayAnim: 0
+  RunOnEnable: 1
 --- !u!1001 &848562968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3021,7 +3042,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1113737536}
   - component: {fileID: 1113737535}
-  - component: {fileID: 1113737537}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3060,18 +3080,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1113737537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113737534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35cdab3ba36d47d44b583ab6f68ea7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1117416433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4128,6 +4136,7 @@ GameObject:
   - component: {fileID: 2054878185}
   - component: {fileID: 2054878184}
   - component: {fileID: 2054878183}
+  - component: {fileID: 2054878186}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -4212,7 +4221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6450048, g: 1, b: 0.41320753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -4237,6 +4246,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054878181}
   m_CullTransparentMesh: 1
+--- !u!114 &2054878186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054878181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c182af78c0704cf4ba988d84a34452b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: 1
+  axis: 2
+  easeType: 23
+  startValue: 1.2
+  endValue: 1
+  duration: 0.1
+  delayAnim: 0
+  RunOnEnable: 0
 --- !u!1 &2145703518
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,6 +4278,7 @@ GameObject:
   - component: {fileID: 2145703522}
   - component: {fileID: 2145703521}
   - component: {fileID: 2145703520}
+  - component: {fileID: 2145703523}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -4320,8 +4350,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1113737537}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 2145703523}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -4345,7 +4375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.97735846, g: 0.45548588, b: 0.5742156, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -4370,6 +4400,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145703518}
   m_CullTransparentMesh: 1
+--- !u!114 &2145703523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145703518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c182af78c0704cf4ba988d84a34452b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: 1
+  axis: 2
+  easeType: 23
+  startValue: 1.2
+  endValue: 1
+  duration: 0.1
+  delayAnim: 0
+  RunOnEnable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

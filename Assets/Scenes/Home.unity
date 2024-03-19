@@ -509,8 +509,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -990,8 +990,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1070,6 +1070,7 @@ GameObject:
   - component: {fileID: 1678708199}
   - component: {fileID: 1678708198}
   - component: {fileID: 1678708197}
+  - component: {fileID: 1678708200}
   m_Layer: 5
   m_Name: T1
   m_TagString: Untagged
@@ -1141,8 +1142,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1996143453}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 1678708200}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
+        m_MethodName: Animate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1678708200}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -1191,6 +1204,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678708195}
   m_CullTransparentMesh: 1
+--- !u!114 &1678708200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678708195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c182af78c0704cf4ba988d84a34452b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: 1
+  axis: 2
+  easeType: 16
+  startValue: -0
+  endValue: 1
+  duration: 1
+  delayAnim: 0.5
+  RunOnEnable: 1
 --- !u!1 &1710324826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1236,7 @@ GameObject:
   - component: {fileID: 1710324830}
   - component: {fileID: 1710324829}
   - component: {fileID: 1710324828}
+  - component: {fileID: 1710324831}
   m_Layer: 5
   m_Name: T2
   m_TagString: Untagged
@@ -1274,8 +1308,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1996143453}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 1710324831}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
+        m_MethodName: Animate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1710324831}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -1324,6 +1370,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710324826}
   m_CullTransparentMesh: 1
+--- !u!114 &1710324831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710324826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c182af78c0704cf4ba988d84a34452b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: 1
+  axis: 2
+  easeType: 16
+  startValue: 0
+  endValue: 1
+  duration: 1
+  delayAnim: 0.7
+  RunOnEnable: 1
 --- !u!1 &1844001397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1437,6 @@ GameObject:
   - component: {fileID: 1996143450}
   - component: {fileID: 1996143452}
   - component: {fileID: 1996143451}
-  - component: {fileID: 1996143453}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -1438,18 +1503,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996143449}
   m_CullTransparentMesh: 1
---- !u!114 &1996143453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996143449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35cdab3ba36d47d44b583ab6f68ea7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
