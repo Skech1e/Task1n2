@@ -48,7 +48,10 @@ public class Manager : MonoBehaviour
         if (Content.childCount > 0)
         {
             for (byte b = 0; b < Content.childCount; b++)
+            {
+                Content.GetChild(b).GetComponent<Button>().onClick.RemoveAllListeners();
                 Destroy(Content.GetChild(b).gameObject);
+            }
         }
         for (byte b = 0; b < allData.clients.Count; b++)
         {
