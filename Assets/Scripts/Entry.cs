@@ -28,12 +28,3 @@ public class Entry : MonoBehaviour
     {
         button = GetComponent<Button>();
     }
-    private void OnEnable()
-    {
-
-    }
-    private void OnDisable()
-    {
-        button.onClick.RemoveAllListeners();
-    }
-}

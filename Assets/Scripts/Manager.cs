@@ -12,6 +12,7 @@ public class Manager : MonoBehaviour
     public Transform Content;
     public Entry _entry;
     public Button LoadData, Reset;
+    public TMP_Dropdown Filter;
     public List<Entry> _entries;
 
     [Header("DetailsPanel Section")]
@@ -33,7 +34,7 @@ public class Manager : MonoBehaviour
     private void OnEnable()
     {
         LoadData.onClick.AddListener(() => PopulateList());
-        Reset.onClick.AddListener(() => FilterData(0));
+        Reset.onClick.AddListener(() => { Filter.value = 0; FilterData(0); });
     }
     private void OnDisable()
     {
