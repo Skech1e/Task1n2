@@ -4207,7 +4207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2054878184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2054878186}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
+        m_MethodName: Animate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2054878184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4260,10 +4272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: 1
   axis: 2
-  easeType: 23
+  easeType: 30
   startValue: 1.2
   endValue: 1
-  duration: 0.1
+  duration: 0.3
   delayAnim: 0
   RunOnEnable: 0
 --- !u!1 &2145703518
@@ -4352,6 +4364,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2145703523}
         m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
+        m_MethodName: Animate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2145703523}
+        m_TargetAssemblyTypeName: Tweener, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -4414,10 +4438,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: 1
   axis: 2
-  easeType: 23
+  easeType: 30
   startValue: 1.2
   endValue: 1
-  duration: 0.1
+  duration: 0.3
   delayAnim: 0
   RunOnEnable: 0
 --- !u!1660057539 &9223372036854775807
