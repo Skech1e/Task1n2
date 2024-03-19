@@ -3831,7 +3831,7 @@ MonoBehaviour:
   easeType: 19
   startValue: 0
   endValue: 1
-  duration: 0.69
+  duration: 0.4
   delayAnim: 0.15
   RunOnEnable: 1
 --- !u!1 &1259589443
@@ -3918,7 +3918,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.35
+  m_fontSize: 54.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5539,7 +5539,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1004490459}
   m_HandleRect: {fileID: 1004490458}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6768,7 +6768,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.35
+  m_fontSize: 54.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7037,7 +7037,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.35
+  m_fontSize: 54.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

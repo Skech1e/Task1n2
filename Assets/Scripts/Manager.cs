@@ -33,7 +33,7 @@ public class Manager : MonoBehaviour
     }
     private void OnEnable()
     {
-        LoadData.onClick.AddListener(() => PopulateList());
+        LoadData.onClick.AddListener(() => { Filter.value = 0; PopulateList(); });
         Reset.onClick.AddListener(() => { Filter.value = 0; FilterData(0); });
     }
     private void OnDisable()
@@ -49,8 +49,9 @@ public class Manager : MonoBehaviour
         {
             for (byte b = 0; b < Content.childCount; b++)
             {
-                Content.GetChild(b).GetComponent<Button>().onClick.RemoveAllListeners();
-                Destroy(Content.GetChild(b).gameObject);
+                var child = Content.GetChild(b);
+                child.GetComponent<Button>().onClick.RemoveAllListeners();
+                Destroy(child.gameObject);
             }
         }
         for (byte b = 0; b < allData.clients.Count; b++)
